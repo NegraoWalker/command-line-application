@@ -8,10 +8,9 @@ import (
 )
 
 func main() {
-	fmt.Println("Ponto de partida da aplicação")
+	fmt.Println("IPs ou Servidores:")
 	application := app.Gerar()
 	erro := application.Run(os.Args)
-
 	if erro != nil {
 		log.Fatal(erro)
 	}
